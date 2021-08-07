@@ -8,7 +8,7 @@ Upper_letters= ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
 numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+','_']
 
-
+systemrequirement = int(input("How long should the password will be?"));
 userpassword = str(input("Type your password "));
 
 lower_letter_password = 0;
@@ -16,7 +16,7 @@ upper_letter_password = 0;
 number_password=0;
 symbols_password=0;
 
-if len(userpassword) >= 6:
+if len(userpassword) >= systemrequirement:
     for values in userpassword:
         if values in Lower_letters:
             lower_letter_password+=1;
